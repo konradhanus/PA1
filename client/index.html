@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Użytkowników WebSocket</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    51.0865
+    17.0530
+    <div id="map"></div>
+
+    <div id="controlsPanel">
+        <div id="userListContainer">
+            <h3>Aktywni użytkownicy:</h3>
+            <ul id="userList">
+                <!-- Lista użytkowników zostanie wstawiona tutaj przez JS -->
+            </ul>
+        </div>
+        <div id="manualLocationContainer">
+            <h3>Zmień swoją pozycję:</h3>
+            <label for="manualLat">Szerokość (Lat):</label>
+            <input type="number" id="manualLat" step="any" placeholder="np. 52.2297">
+            <label for="manualLng">Długość (Lng):</label>
+            <input type="number" id="manualLng" step="any" placeholder="np. 21.0122">
+            <button id="updateLocationBtn">Aktualizuj pozycję</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
