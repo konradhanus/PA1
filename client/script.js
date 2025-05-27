@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const connectedUsers = new Map(); // { uuid: { userName, lat, lng, uuid } }
 
     // Inicjalizacja WebSocket
-    const socket = new WebSocket('ws://localhost:8080'); // Zmień na adres swojego serwera jeśli jest inny
+    const socket = new WebSocket('wss://psiaapka.pl/PA1/'); // Zmień na adres swojego serwera jeśli jest inny
 
     socket.onopen = () => {
         console.log('Połączono z serwerem WebSocket.');
